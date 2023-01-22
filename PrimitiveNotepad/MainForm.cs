@@ -81,6 +81,7 @@ namespace PrimitiveNotepad
                 switch (dlgUnsaved.DialogResult) // Действуем в соответствии с ответом на диалог:
                 {
                     case DialogResult.Yes: // Кнопка "сохранить"
+
                         if (currentDocument != "") // Если открыт какой-либо файл, тогда:
                         {
                             // Просто записываем содержимое текстового поля в текущий файл
