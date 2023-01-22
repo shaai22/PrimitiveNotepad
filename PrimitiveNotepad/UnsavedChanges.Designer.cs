@@ -92,6 +92,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "UnsavedChanges";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Сохранить изменения?";
             this.ResumeLayout(false);
             this.PerformLayout();
