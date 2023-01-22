@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("PrimitiveNotepad")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Примитивный блокнот")]
+[assembly: AssemblyDescription("Самый простой текстовый редактор")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ФГБОУ ВО Университет Дубна")]
 [assembly: AssemblyProduct("Примитивный блокнот")]
 [assembly: AssemblyCopyright("Copyright © Dubna State University 2023")]
 [assembly: AssemblyTrademark("")]
