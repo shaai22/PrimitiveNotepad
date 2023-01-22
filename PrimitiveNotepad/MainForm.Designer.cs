@@ -38,8 +38,8 @@
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuView = new System.Windows.Forms.ToolStripMenuItem();
             this.menuFont = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainText = new System.Windows.Forms.TextBox();
             this.menuWrap = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainText = new System.Windows.Forms.TextBox();
             this.menuMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,6 +123,13 @@
             this.menuFont.Text = "Шрифт";
             this.menuFont.Click += new System.EventHandler(this.menuFont_Click);
             // 
+            // menuWrap
+            // 
+            this.menuWrap.Name = "menuWrap";
+            this.menuWrap.Size = new System.Drawing.Size(183, 22);
+            this.menuWrap.Text = "Перенос по словам";
+            this.menuWrap.Click += new System.EventHandler(this.menuWrap_Click);
+            // 
             // mainText
             // 
             this.mainText.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -135,13 +142,6 @@
             this.mainText.TabIndex = 1;
             this.mainText.WordWrap = false;
             this.mainText.TextChanged += new System.EventHandler(this.mainText_TextChanged);
-            // 
-            // menuWrap
-            // 
-            this.menuWrap.Name = "menuWrap";
-            this.menuWrap.Size = new System.Drawing.Size(183, 22);
-            this.menuWrap.Text = "Перенос по словам";
-            this.menuWrap.Click += new System.EventHandler(this.menuWrap_Click);
             // 
             // MainForm
             // 

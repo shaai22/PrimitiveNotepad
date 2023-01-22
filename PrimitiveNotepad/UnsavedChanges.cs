@@ -17,19 +17,22 @@ namespace PrimitiveNotepad
             InitializeComponent();
         }
 
+        // Кнопка "сохранить"
         private void btnSave_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Yes;
+            this.DialogResult = DialogResult.Yes; // Возвращаем в программу положительный ответ
         }
 
+        // Кнопка "не сохранять"
         private void btnDontSave_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.No;
+            this.DialogResult = DialogResult.No; // Возвращаем в программу отрицательный ответ
         }
 
+        // Кнопка "отмена"
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
+            this.DialogResult = DialogResult.Cancel; // Возвращаем в программу отмену действия
         }
     }
 }
