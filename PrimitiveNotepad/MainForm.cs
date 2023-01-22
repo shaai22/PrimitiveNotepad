@@ -81,8 +81,18 @@ namespace PrimitiveNotepad
                 switch (dlgUnsaved.DialogResult) // Действуем в соответствии с ответом на диалог:
                 {
                     case DialogResult.Yes: // Кнопка "сохранить"
-
-                        saveFile(); // Запускаем процедуру сохранения файла
+                        if (currentDocument != "") // Если открыт какой-либо файл, тогда:
+                        {
+                            // Просто записываем содержимое текстового поля в текущий файл
+                            using (StreamWriter sw = new StreamWriter(currentDocument))
+                            {
+                                sw.WriteLine(mainText.Text);
+                            }
+                        } else
+                        {
+                            saveFile(); // Запускаем процедуру сохранения файла
+                        }
+                        openFile();
                         break;
                     case DialogResult.No: // Кнопка "не сохранять"
 
@@ -182,6 +192,7 @@ namespace PrimitiveNotepad
         // Процедура сохранения файла
         public void saveFile()
         {
+
             dlgSave.ShowDialog(); // Показываем диалог сохранения файла
 
             if (dlgSave.FileName != "") // Если введено имя файла
