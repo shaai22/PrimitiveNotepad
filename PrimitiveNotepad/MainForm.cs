@@ -226,5 +226,10 @@ namespace PrimitiveNotepad
                 documentSaved = true; // Устанавливаем поле "документ сохранен"
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Курсовая работа\r\n\r\nстудента 2 курса группы Прог-С-21\r\nШилова Алексея Александровича\r\nпо введению в программирование\r\nна тему:\r\n\r\nПримитивный текстовый редактор", "Титульный лист");
+        }
     }
 }

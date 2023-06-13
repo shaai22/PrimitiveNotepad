@@ -71,40 +71,40 @@
             // menuNew
             // 
             this.menuNew.Name = "menuNew";
-            this.menuNew.Size = new System.Drawing.Size(154, 22);
+            this.menuNew.Size = new System.Drawing.Size(180, 22);
             this.menuNew.Text = "Новый";
             this.menuNew.Click += new System.EventHandler(this.menuNew_Click);
             // 
             // menuOpen
             // 
             this.menuOpen.Name = "menuOpen";
-            this.menuOpen.Size = new System.Drawing.Size(154, 22);
+            this.menuOpen.Size = new System.Drawing.Size(180, 22);
             this.menuOpen.Text = "Открыть";
             this.menuOpen.Click += new System.EventHandler(this.menuOpen_Click);
             // 
             // menuSave
             // 
             this.menuSave.Name = "menuSave";
-            this.menuSave.Size = new System.Drawing.Size(154, 22);
+            this.menuSave.Size = new System.Drawing.Size(180, 22);
             this.menuSave.Text = "Сохранить";
             this.menuSave.Click += new System.EventHandler(this.menuSave_Click);
             // 
             // menuSaveAs
             // 
             this.menuSaveAs.Name = "menuSaveAs";
-            this.menuSaveAs.Size = new System.Drawing.Size(154, 22);
+            this.menuSaveAs.Size = new System.Drawing.Size(180, 22);
             this.menuSaveAs.Text = "Сохранить как";
             this.menuSaveAs.Click += new System.EventHandler(this.menuSaveAs_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(151, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(154, 22);
+            this.menuExit.Size = new System.Drawing.Size(180, 22);
             this.menuExit.Text = "Выход";
             this.menuExit.Click += new System.EventHandler(this.menuExit_Click);
             // 
@@ -155,6 +155,7 @@
             this.MainMenuStrip = this.menuMain;
             this.Name = "MainForm";
             this.Text = "Примитивный блокнот";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuMain.ResumeLayout(false);
             this.menuMain.PerformLayout();
             this.ResumeLayout(false);
